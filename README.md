@@ -8,3 +8,17 @@
 [ ] Make sure the clock updates every second without refreshing the page
 
 [ ] Start the alarm when the difference between the current time and the time the alarm is set for reaches 0 (Tip: use a javascript alert, you do not need it to make noise)
+
+# To Do
+
+[x] Initial pseudocode
+
+![initial whiteboard pseudocode](img/PXL_20230913_144241259.jpg)
+
+# Stretch Goals
+
+[ ]
+
+# Bugs
+
+[ ]
