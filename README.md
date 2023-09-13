@@ -13,6 +13,9 @@
 
 [x] Initial pseudocode
 
+[] Comment pseudocode in html file
+
+
 ![initial whiteboard pseudocode](img/PXL_20230913_144241259.jpg)
 
 # Stretch Goals
