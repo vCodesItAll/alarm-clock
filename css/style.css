@@ -10,17 +10,64 @@
 }
 
 
-
-.currentTime {
-    border: double;
+.currentTimeContainer {
+    border:double;
+    display:flex;
+    flex-wrap: wrap;
+    direction:ltr;
+    width:100%;
 }
 
+.currentTimeHeader {
+    display:flex;
+}
 
+.currentHoursMinsSecsContainer {
+    display:flex;
+}
+
+.currentHours {
+    border:double;
+    width:25%;
+    display:flex;
+    padding: 0;
+
+ 
+}
+
+.currentMins {
+    border:double;
+    width:25%;
+    padding: 0;
+    display:flex;
+    position:relative;
+    float:center;
+    align:center;
+ 
+}
+
+.currentSecs {
+    border:double;
+    width: 25%
+    position: relative;
+    float:right;
+    display:flex;
+
+}
+
+.clockAmOrPm {
+    border:double;
+}
 
 .alarm {
     border: double;
 }
 
-div > p {
+#center {
+    justify-items
+}
+
+div > h3 {
     text-align: center;
 }
+
