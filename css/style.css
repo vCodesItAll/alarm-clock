@@ -1,12 +1,26 @@
 /* add outline to clockBody id */
-#clockBody {
+.clockBody {
     border: double;
 }
 
-#clock {
+
+
+.clock {
     border: double;
 }
 
-#currentTime {
+
+
+.currentTime {
     border: double;
+}
+
+
+
+.alarm {
+    border: double;
+}
+
+div > p {
+    text-align: center;
 }
