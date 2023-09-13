@@ -13,7 +13,7 @@
 
 [x] Initial pseudocode
 
-[] Comment pseudocode in html file
+[] Comment pseudocode in html file and css
 
 
 ![initial whiteboard pseudocode](img/PXL_20230913_144241259.jpg)
