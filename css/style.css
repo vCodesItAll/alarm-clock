@@ -48,9 +48,24 @@
 
 .alarm {
     border: double;
+    width: 100%;
 }
 
 div > h3 {
     text-align: center;
 }
 
+.alarmContainer {
+    border: double;
+    display:flex;
+}
+
+.instructions {
+    border:double;
+    width:33%;
+}
+
+.alarmTime {
+    border:double;
+    width:33%;
+}
