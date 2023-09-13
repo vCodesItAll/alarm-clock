@@ -29,42 +29,25 @@
 .currentHours {
     border:double;
     width:25%;
-    display:flex;
-    padding: 0;
-
- 
 }
 
 .currentMins {
     border:double;
     width:25%;
-    padding: 0;
-    display:flex;
-    position:relative;
-    float:center;
-    align:center;
- 
 }
 
 .currentSecs {
     border:double;
-    width: 25%
-    position: relative;
-    float:right;
-    display:flex;
-
+    width: 25%;
 }
 
 .clockAmOrPm {
     border:double;
+    width:24%;
 }
 
 .alarm {
     border: double;
-}
-
-#center {
-    justify-items
 }
 
 div > h3 {
