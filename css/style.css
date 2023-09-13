@@ -1,1 +1,12 @@
 /* add outline to clockBody id */
+#clockBody {
+    border: double;
+}
+
+#clock {
+    border: double;
+}
+
+#currentTime {
+    border: double;
+}
