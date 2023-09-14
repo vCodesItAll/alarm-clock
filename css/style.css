@@ -69,3 +69,13 @@ div > h3 {
     border:double;
     width:33%;
 }
+
+.clockAm {
+    border:double;
+    width:100%;
+}
+
+.clockPm {
+    border:double;
+    width:100%;
+}
