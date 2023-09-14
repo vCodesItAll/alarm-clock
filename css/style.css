@@ -10,7 +10,15 @@
 }
 
 
-.currentTimeContainer {
+.invisibleCurrentTimeContainer {
+    border:double;
+    display:flex;
+    flex-wrap: wrap;
+    direction:ltr;
+    width:100%;
+}
+
+.invisibleAlarmHoursAndMinsContainer {
     border:double;
     display:flex;
     flex-wrap: wrap;
@@ -22,9 +30,6 @@
     display:flex;
 }
 
-.currentHoursMinsSecsContainer {
-    display:flex;
-}
 
 .currentHours {
     border:double;
@@ -55,7 +60,7 @@ div > h3 {
     text-align: center;
 }
 
-.alarmContainer {
+.invisibleAlarmContainer {
     border: double;
     display:flex;
 }
@@ -76,6 +81,31 @@ div > h3 {
 }
 
 .clockPm {
+    border:double;
+    width:100%;
+}
+
+.alarmHours {
+    border:double;
+    width:49.25%
+}
+
+.alarmMins {
+    border:double;
+    width:49.25%;
+}
+
+.alarmAmOrPm {
+    border:double;
+    width:34%;
+}
+
+.alarmAm {
+    border:double;
+    width:100%;
+}
+
+.alarmPm {
     border:double;
     width:100%;
 }
