@@ -35,19 +35,15 @@
         <!-- create class invisibleAlarmContainer -->
         <div class = "invisibleAlarmContainer">
             <!-- create div class instructions -->
-            <div class ="instructions"><h3>instructions</h3>
-                <!-- CREATE string with user instructions -->
-                <div>
-                    <!-- CREATE label and assign input to alarmHour -->
-                    <label for ="alarmHour">Set Alarm Hour (1-12): </label>
-                </div>
-            </div>
+            <div class ="instructions"><h3>instructions</h3></div>
             <!-- create div class alarmTime -->
             <div class = "alarmTime"><h3>alarmTime</h3>
                 <!-- create class invisibleAlarmHoursAndMinsContainer -->
                 <div class ="invisibleAlarmHoursAndMinsContainer">
                     <!-- create div class alarmHours -->
                     <div class = "alarmHours"><h3>alarmHours</h3>
+                        <!-- CREATE label and assign input to alarmHour -->
+                        <label for ="alarmHour">Set Alarm Hour (1-12): </label>
                         <!-- create input id alarmHour with min and max -->
                         <input type ="number" id ="alarmHour" min="1" max="12">
                     </div>
@@ -57,8 +53,13 @@
         </div>
         <!-- create div class alarmAmOrPM -->
         <div class = "alarmAmOrPm">
-            <!-- create label for amPm to select am or pm -->
-                <label for = "amPm">Select AM or PM: </label>
+            <!-- create label for amPm to select am or pm for alarm time -->
+            <label for = "amPm">Select AM or PM: </label>
+                <!-- create dropdown select options for AM and PM -->
+                <select id = "amPm">
+                    <option value = "AM">AM</option>
+                    <option value = "PM">PM</option>
+                </select>
             <!-- create button class alarmAm -->
             <div class = "alarmAm"><h3>alarmAm</h3></div>
             <!-- create button class alarmPm -->
