@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Alarm Clock</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
@@ -38,7 +39,7 @@
                 <!-- CREATE string with user instructions -->
                 <div>
                     <!-- CREATE label and assign input to alarmHour -->
-                    <label for ="alarmHour"Set Alarm Hour (1-12): </label>
+                    <label for ="alarmHour">Set Alarm Hour (1-12): </label>
                 </div>
             </div>
             <!-- create div class alarmTime -->
@@ -46,7 +47,10 @@
                 <!-- create class invisibleAlarmHoursAndMinsContainer -->
                 <div class ="invisibleAlarmHoursAndMinsContainer">
                     <!-- create div class alarmHours -->
-                    <div class = "alarmHours"><h3>alarmHours</h3></div>
+                    <div class = "alarmHours"><h3>alarmHours</h3>
+                        <!-- create input id alarmHour with min and max -->
+                        <input type ="number" id ="alarmHour" min="1" max="12">
+                    </div>
                     <!-- create div class alarmMins -->
                     <div class = "alarmMins"><h3>alarmMins</h3></div>
             </div>
