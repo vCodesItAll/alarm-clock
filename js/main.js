@@ -115,11 +115,20 @@ function setAlarm() {
     // initialize alarmHour24 with alarmHour in military time
     // startif (alarmHour24 is set to PM and not 12 then add 12)
     // elseif (alarmHour24 is set to AM and 12 then make midnight equal 0)
-    // initialize 
+    // initialize alarmTime with date object
+    // pass alarmHour24 to alarmTime.setHours()
+    // convert current time in seconds after midnight
+    // convert alarm time to seconds after midnight
+    
 }
+
+
 
 // call function
 updateClock();
 
 // call function to update clock every 1000 ms
 setInterval(updateClock, 1000);
+
+
+setTimeout(())
