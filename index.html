@@ -12,7 +12,7 @@
 <!-- create class clockBody div -->
 <div class ="clockBody"><h3>clockBody</h3>
     <!-- create class clock -->
-    <div class ="clock"><h3>clock</h3>
+    <div class ="clock" id="clock"><h3>clock</h3>
         <!-- create class invisibleCurrentTimeContainer -->
         <div class ="invisibleCurrentTimeContainer">
             <!-- create class currentHours -->
@@ -48,9 +48,15 @@
                         <input type ="number" id ="alarmHour" min="1" max="12">
                     </div>
                     <!-- create div class alarmMins -->
-                    <div class = "alarmMins"><h3>alarmMins</h3></div>
+                    <div class = "alarmMins">
+                        <h3>alarmMins</h3>
+                        <!-- CREATE label and assign input to alarmMinute -->
+                        <label for = "alarmMinute">Set Alarm Minute (0-59): </label>
+                        <!-- create input id alarmMinute with min and max -->
+                        <input type="number" id="alarmMinute" min="0" max="59">
+                    </div>
+                </div>
             </div>
-        </div>
         <!-- create div class alarmAmOrPM -->
         <div class = "alarmAmOrPm">
             <!-- create label for amPm to select am or pm for alarm time -->
@@ -60,29 +66,16 @@
                     <option value = "AM">AM</option>
                     <option value = "PM">PM</option>
                 </select>
+            <!-- create button id setAlarm labelled Set Alarm -->
+                <button id = "setAlarm">Set Alarm</button>
             <!-- create button class alarmAm -->
             <div class = "alarmAm"><h3>alarmAm</h3></div>
             <!-- create button class alarmPm -->
             <div class = "alarmPm"><h3>alarmPm</h3></div>
         </div>
+        </div>
     </div>
 </div>
-
-   
-</div>
-
-
-
-
-    
-
-
-
-    
-   
-   
-
-   
 <script src="js/main.js"></script>
 </body>
 </html>

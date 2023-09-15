@@ -1,3 +1,10 @@
+/* shameless cursor */
+body {
+    cursor: url("img/cards.png");
+    background-image: url("img/0c8a2f6f-ec2d-459e-a204-43d54cb83346.jpg");
+}
+
+
 /* add outline to clockBody id */
 .clockBody {
     border: double;
