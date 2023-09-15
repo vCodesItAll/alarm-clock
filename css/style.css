@@ -58,6 +58,7 @@
 
 div > h3 {
     text-align: center;
+    opacity: 50%;
 }
 
 .invisibleAlarmContainer {
@@ -108,4 +109,8 @@ div > h3 {
 .alarmPm {
     border:double;
     width:100%;
+}
+
+p {
+    text-align: center;
 }

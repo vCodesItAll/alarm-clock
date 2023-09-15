@@ -1,8 +1,26 @@
+// ------------------------------------------------------------------ //
+//                                                                    //
+//                         VARIABLE DICTIONARY                        //
+//                                                                    //
+// - currentTime is current time refreshing on load in HH:MM:SS         //
+// - alarmTime is the time the user sets for the alarm                  //
+//                                                                
+// ------------------------------------------------------------------ //
+//
+//
 // CREATE working alarm clock
 /* ----------------------------------------------------------------- */
-// START 
+//
+//
 /* ----------------------------------------------------------------- */
 // DECLARE variables
+
+    // INITIALIZE currentTime as new Date()
+    let currentTime = new Date();
+
+    // INITIALIZE currentTime as new Date()
+    let currentTime = new Date();
+
 
     // date OBJECT fetches time
 
