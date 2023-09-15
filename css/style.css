@@ -1,3 +1,9 @@
+/* shameless cursor */
+body {
+    cursor: url("img/cards.png");
+}
+
+
 /* add outline to clockBody id */
 .clockBody {
     border: double;
