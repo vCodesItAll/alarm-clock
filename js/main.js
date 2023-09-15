@@ -103,4 +103,13 @@ function updateClock() {
     // initialize seconds
     const seconds = currentTime.getSeconds();
     // initialize amOrPm, if military current time is greater or equal to 12 then it is PM, else AM
-}   const amOrPm = currentTime.getHours() >= 12 ? "PM" : "AM";
+    const amOrPm = currentTime.getHours() >= 12 ? "PM" : "AM";
+    // show formatted currentTime data in div id clock
+    document.getElementById("clock").innerHTML = `(Time: ${hours}:${minutes}:${seconds} ${amOrPm})`;
+}
+
+// call function
+updateClock();
+
+// call function to update clock every 1000 ms
+setInterval(updateClock, 1000);
