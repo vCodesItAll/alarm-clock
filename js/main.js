@@ -88,9 +88,21 @@
 
 // START alarm clock program
 
-// INITIALIZE VARIABLES
-let currentTime = new Date();
-let alarmTime = new Date();
+// INITIALIZE variables
+// let currentTime = new Date();
+// let alarmTime = new Date();
+// let timeRemainingInSeconds = 0;
+// let currentTime = new Date();
+// let alarmTime = new Date();
+// let timeRemainingInSeconds = 0;
+
+let alarmTimeInSeconds = 0;
+let timeNowIn12HourFormat = 0;
+
+// calculate timeRemainingInSeconds equal to alarmTimeInSeconds - timeNowIn12HourFormat;
+// let alarmTimeInSeconds;
+// let timeNowIn12HourFormat;
+// timeRemainingInSeconds = alarmTimeInSeconds - timeNowIn12HourFormat;
 
 // DECLARE updateClock()
 function updateClock() {
@@ -112,30 +124,42 @@ function updateClock() {
 function setAlarm() {
     // initialize alarmHour and convert id alarmHour input to int
     const alarmHour = parseInt(document.getElementById("alarmHour").value);
+    // initialize alarmMinute and convert id alarmMinute input to int
+    const alarmMinute = parseInt(document.getElementById("alarmMinute").value);
     // initialize amPm with am or pm from dropdown id amPm
     const amPm = document.getElementById("amPm").value;
     // initialize alarmHour24 with alarmHour in military time
     let alarmHour24 = alarmHour;
     // startif (alarmHour24 is set to PM and not 12 then add 12)
     if (amPm === "PM" && alarmHour !== 12) {
+        alarmHour24 += 12;
     // elseif (alarmHour24 is set to AM and 12)
     } else if (amPm === "AM" && alarmHour === 12) {
         //  initialize midnight equal 0 as alarmHour24 = 0
         alarmHour24 = 0;
     }
+
+    // convert alarm time to seconds after midnight with military time
+    alarmTimeInSeconds = (alarmHour24 * 3600) + (alarmMinute * 60);
    
     // initialize alarmTime with date object
     const alarmTime = new Date();
-    // pass alarmHour24 to alarmTime.setHours()
-    alarmTime.setHours(alarmHour24, 0, 0, 0);
+    // format alarmTime with alarmHour24 and alarmMinute
+    alarmTime.setHours(alarmHour24, alarmMinute, 0, 0);
+   
+   
     // convert current time in seconds after midnight
-    const timeNowIn12HourFormat = (new Date().getHours() % 12 || 12) * 3600 + new Date().getMinutes() * 60 + new Date().getSeconds();
-    // convert alarm time to seconds after midnight with military time
-    const alarmTimeInSeconds = alarmHour24 * 3600;
-    // calculate timeRemainingInSeconds equal to alarmTimeInSeconds - timeNowIn12HourFormat;
-    let timeRemainingInSeconds = alarmTimeInSeconds - timeNowIn12HourFormat;
-}
+    timeNowIn12HourFormat = (new Date().getHours() % 12 || 12) * 3600 + new Date().getMinutes() * 60 + new Date().getSeconds();
+    // calculate timeRemainingInSeconds
+    const timeRemainingInSeconds = alarmTimeInSeconds - timeNowIn12HourFormat;
 
+    // trigger alarm alert
+    setTimeout(() => {
+        alert("ITS MORBIN TIME");
+    // set delay to timeRemainingInSeconds * 1000 milliseconds 
+    }, timeRemainingInSeconds * 1000);
+
+}
 
 
 // call function
@@ -144,8 +168,3 @@ updateClock();
 // call function to update clock every 1000 ms
 setInterval(updateClock, 1000);
 
-// trigger alarm alert
-setTimeout(() => {
-    alert("ITS MORBIN TIME");
-    // set delay to timeRemainingInSeconds * 1000 milliseconds 
-}, timeRemainingInSeconds * 1000);
