@@ -111,10 +111,19 @@ function updateClock() {
 // declare setAlarm()
 function setAlarm() {
     // initialize alarmHour and convert id alarmHour input to int
+    const alarmHour = parseInt(document.getElementById("alarmHour").value);
     // initialize amPm with am or pm from dropdown id amPm
+    const amPm = document.getElementById("amPm").value;
     // initialize alarmHour24 with alarmHour in military time
+    let alarmHour24 = alarmHour;
     // startif (alarmHour24 is set to PM and not 12 then add 12)
-    // elseif (alarmHour24 is set to AM and 12 then make midnight equal 0)
+    if (amPm === "PM" && alarmHour !== 12) {
+    // elseif (alarmHour24 is set to AM and 12)
+    } else if (amPm === "AM" && alarmHour === 12) {
+        //  initialize midnight equal 0 as alarmHour24 = 0
+        alarmHour24 = 0;
+    }
+   
     // initialize alarmTime with date object
     // pass alarmHour24 to alarmTime.setHours()
     // convert current time in seconds after midnight
