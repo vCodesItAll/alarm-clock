@@ -162,9 +162,9 @@ function setAlarm() {
 }
 
 
-// call function
-updateClock();
-
-// call function to update clock every 1000 ms
-setInterval(updateClock, 1000);
-
+// call updateClock when window loads
+window.onload = function () {
+    updateClock();
+    // call function to update clock every 1000 ms
+    setInterval(updateClock, 1000);
+}
