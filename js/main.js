@@ -93,3 +93,13 @@ let currentTime = new Date();
 let alarmTime = new Date();
 
 // DECLARE updateClock()
+function updateClock() {
+    // INITIALIZE currentTIme
+    const currentTime = new Date();
+    // initialize hours and convert to 12 hour system with remainder operator, if remainder from division by 12 equals 0 then assign 12
+    const hours = currentTime.getHours() % 12  || 12;
+    // initialize minutes
+    const minutes = currentTime.getMinutes();
+    // initialize seconds
+    const seconds = currentTime.getSeconds();
+}
