@@ -125,10 +125,15 @@ function setAlarm() {
     }
    
     // initialize alarmTime with date object
+    const alarmTime = new Date();
     // pass alarmHour24 to alarmTime.setHours()
+    alarmTime.setHours(alarmHour24, 0, 0, 0);
     // convert current time in seconds after midnight
-    // convert alarm time to seconds after midnight
-    
+    const timeNowIn12HourFormat = (new Date().getHours() % 12 || 12) * 3600 + new Date().getMinutes() * 60 + new Date().getSeconds();
+    // convert alarm time to seconds after midnight with military time
+    const alarmTimeInSeconds = alarmHour24 * 3600;
+    // calculate timeRemainingInSeconds equal to alarmTimeInSeconds - timeNowIn12HourFormat;
+    let timeRemainingInSeconds = alarmTimeInSeconds - timeNowIn12HourFormat;
 }
 
 
@@ -141,6 +146,6 @@ setInterval(updateClock, 1000);
 
 // trigger alarm alert
 setTimeout(() => {
-    alert(ITS MORBIN TIME);
+    alert("ITS MORBIN TIME");
     // set delay to timeRemainingInSeconds * 1000 milliseconds 
-}
+}, timeRemainingInSeconds * 1000);
