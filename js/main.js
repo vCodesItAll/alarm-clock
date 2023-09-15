@@ -130,5 +130,8 @@ updateClock();
 // call function to update clock every 1000 ms
 setInterval(updateClock, 1000);
 
-
-setTimeout(())
+// trigger alarm alert
+setTimeout(() => {
+    alert(ITS MORBIN TIME);
+    // set delay to timeRemainingInSeconds * 1000 milliseconds 
+}
