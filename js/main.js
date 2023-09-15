@@ -44,11 +44,17 @@
 //  IGNORE ABOVE OLD PSEUDOCODE ---------------------------------------
 
 // ------------------------------------------------------------------ //
-//                                                                    //
+//  /*                                                                  //
 //                         VARIABLE DICTIONARY                        //
 //                                                                    //
-// - currentTime stores current time
-// - alarmTime is the time the user sets for the alarm                //
+// - currentTime - date object stores current time
+// // - hours - int stores current hour in 12 hour format  /* 
+//     - minutes - int stores current minutes 
+//     - seconds - int stores current seconds
+
+
+
+// */
 //                                                                    //
 //                                                                    //
 // ------------------------------------------------------------------ //
