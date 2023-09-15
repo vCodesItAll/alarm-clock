@@ -2,30 +2,87 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Alarm Clock</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
 <body>
-<p> this is a test is this live</p>
+<p>Vanessa's beautiful bare minimum clock</p>
 
-<!-- create id clockBody div -->
-<!-- create id clock -->
-    <!-- create id currentTime -->
-    <!-- create id currentHours -->
-    <!-- create id currentMins -->
-    <!-- create id currentSecs -->
-    <!-- create div id clockAmOrPm -->
-    <!-- create button id clockAm -->
-    <!-- create button id clockPm -->
-<!-- create id alarm -->
-    <!-- create div id instructions -->
-<!-- create div id alarmTime -->
-<!-- create div id alarmHours -->
-<!-- create div id alarmMins -->
-<!-- create div id alarmAmOrPm -->
-<!-- create button id alarmAm -->
-<!-- create button id alarmPm -->
+<!-- create class clockBody div -->
+<div class ="clockBody"><h3>clockBody</h3>
+    <!-- create class clock -->
+    <div class ="clock"><h3>clock</h3>
+        <!-- create class invisibleCurrentTimeContainer -->
+        <div class ="invisibleCurrentTimeContainer">
+            <!-- create class currentHours -->
+            <div class ="currentHours"><h3>currentHours</h3></div>
+            <!-- create class currentMins -->
+            <div class ="currentMins"><h3>currentMins</h3></div>
+            <!-- create class currentSecs -->
+            <div class = "currentSecs"><h3>currentSecs</h3></div>
+            <!-- create div class clockAmOrPm -->
+            <div class = "clockAmOrPm"><h3>clockAmOrPm</h3>
+                <!-- create button class clockAm -->
+                <div class = "clockAm"><h3>clockAm</h3></div>
+                <!-- create button class clockPm -->
+                <div class = "clockPm"><h3>clockPm</h3></div>
+            </div>   
+        </div>
+    </div>
+    <!-- create class alarm -->
+    <div class ="alarm"><h3>alarm</h3>
+        <!-- create class invisibleAlarmContainer -->
+        <div class = "invisibleAlarmContainer">
+            <!-- create div class instructions -->
+            <div class ="instructions"><h3>instructions</h3></div>
+            <!-- create div class alarmTime -->
+            <div class = "alarmTime"><h3>alarmTime</h3>
+                <!-- create class invisibleAlarmHoursAndMinsContainer -->
+                <div class ="invisibleAlarmHoursAndMinsContainer">
+                    <!-- create div class alarmHours -->
+                    <div class = "alarmHours"><h3>alarmHours</h3>
+                        <!-- CREATE label and assign input to alarmHour -->
+                        <label for ="alarmHour">Set Alarm Hour (1-12): </label>
+                        <!-- create input id alarmHour with min and max -->
+                        <input type ="number" id ="alarmHour" min="1" max="12">
+                    </div>
+                    <!-- create div class alarmMins -->
+                    <div class = "alarmMins"><h3>alarmMins</h3></div>
+            </div>
+        </div>
+        <!-- create div class alarmAmOrPM -->
+        <div class = "alarmAmOrPm">
+            <!-- create label for amPm to select am or pm for alarm time -->
+            <label for = "amPm">Select AM or PM: </label>
+                <!-- create dropdown select options for AM and PM -->
+                <select id = "amPm">
+                    <option value = "AM">AM</option>
+                    <option value = "PM">PM</option>
+                </select>
+            <!-- create button class alarmAm -->
+            <div class = "alarmAm"><h3>alarmAm</h3></div>
+            <!-- create button class alarmPm -->
+            <div class = "alarmPm"><h3>alarmPm</h3></div>
+        </div>
+    </div>
+</div>
 
-<script src="main.js"></script>
+   
+</div>
+
+
+
+
+    
+
+
+
+    
+   
+   
+
+   
+<script src="js/main.js"></script>
 </body>
 </html>

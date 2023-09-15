@@ -1,1 +1,116 @@
 /* add outline to clockBody id */
+.clockBody {
+    border: double;
+}
+
+
+
+.clock {
+    border: double;
+}
+
+
+.invisibleCurrentTimeContainer {
+    border:double;
+    display:flex;
+    flex-wrap: wrap;
+    direction:ltr;
+    width:100%;
+}
+
+.invisibleAlarmHoursAndMinsContainer {
+    border:double;
+    display:flex;
+    flex-wrap: wrap;
+    direction:ltr;
+    width:100%;
+}
+
+.currentTimeHeader {
+    display:flex;
+}
+
+
+.currentHours {
+    border:double;
+    width:25%;
+}
+
+.currentMins {
+    border:double;
+    width:25%;
+}
+
+.currentSecs {
+    border:double;
+    width: 25%;
+}
+
+.clockAmOrPm {
+    border:double;
+    width:24%;
+}
+
+.alarm {
+    border: double;
+    width: 100%;
+}
+
+div > h3 {
+    text-align: center;
+    opacity: 50%;
+}
+
+.invisibleAlarmContainer {
+    border: double;
+    display:flex;
+}
+
+.instructions {
+    border:double;
+    width:33%;
+}
+
+.alarmTime {
+    border:double;
+    width:33%;
+}
+
+.clockAm {
+    border:double;
+    width:100%;
+}
+
+.clockPm {
+    border:double;
+    width:100%;
+}
+
+.alarmHours {
+    border:double;
+    width:49.25%
+}
+
+.alarmMins {
+    border:double;
+    width:49.25%;
+}
+
+.alarmAmOrPm {
+    border:double;
+    width:34%;
+}
+
+.alarmAm {
+    border:double;
+    width:100%;
+}
+
+.alarmPm {
+    border:double;
+    width:100%;
+}
+
+p {
+    text-align: center;
+}
