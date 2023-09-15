@@ -48,18 +48,18 @@
 //                         VARIABLE DICTIONARY                        //
 //                                                                    //
 // - currentTime - date object stores current time
-// // - hours - int stores current hour in 12 hour format  
-//     - minutes - int stores current minutes 
-//     - seconds - int stores current seconds
+// // - hours - number stores current hour in 12 hour format  
+//     - minutes - number stores current minutes 
+//     - seconds - number stores current seconds
  /* 
 - amOrPm - string that stores am or pm for current time 
-- alarmHour - int that stores user's chosen alarm hour
-- alarmMinute - int that stores user's chosen alarm minutes
-- amPm - string that stores user input of am or pm for alarm
-- timeNowIn12HourFormat - int that stores current hour in 12 hour format
-- alarmHour24 - int that stores alarm hour in 24 hour format
-- timeNowInSeconds - int that stores current time in seconds
-- alarmTimeInSeconds - int that stores the alarm time in seconds
+- alarmHour - number that stores user's chosen alarm hour
+- alarmMinute - number that stores user's chosen alarm minutes
+- amPm - number that stores user input of am or pm for alarm
+- timeNowIn12HourFormat - number that stores current hour in 12 hour format
+- alarmHour24 - number that stores alarm hour in 24 hour format
+- timeNowInSeconds - number that stores current time in seconds
+- alarmTimeInSeconds - number that stores the alarm time in seconds
 
 
 
@@ -106,6 +106,16 @@ function updateClock() {
     const amOrPm = currentTime.getHours() >= 12 ? "PM" : "AM";
     // show formatted currentTime data in div id clock
     document.getElementById("clock").innerHTML = `(Time: ${hours}:${minutes}:${seconds} ${amOrPm})`;
+}
+
+// declare setAlarm()
+function setAlarm() {
+    // initialize alarmHour and convert id alarmHour input to int
+    // initialize amPm with am or pm from dropdown id amPm
+    // initialize alarmHour24 with alarmHour in military time
+    // startif (alarmHour24 is set to PM and not 12 then add 12)
+    // elseif (alarmHour24 is set to AM and 12 then make midnight equal 0)
+    // initialize 
 }
 
 // call function
