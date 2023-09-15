@@ -1,7 +1,7 @@
-// DISPLAY current time in digital clock format
-
+// CREATE working alarm clock
+/* ----------------------------------------------------------------- */
 // START 
-
+/* ----------------------------------------------------------------- */
 // DECLARE variables
 
     // date OBJECT fetches time
@@ -10,4 +10,24 @@
         // EXECUTES when page loads
 
         // DECLARE setInterval to pass seconds, 1000 ms = 1 second;
-        
+
+/* ----------------------------------------------------------------- */
+// SET alarm
+
+// ALERT alarm 
+
+// CREATE new alarm
+
+// DISPLAY CURRENT TIME
+
+    // EXECUTES when window.onload event executes
+    
+    // function onLoadFunction(event) {
+    //    console.log(event);
+    // }
+
+// DISPLAY ALARM STATUS
+// DISPLAY ALARM TIME
+
+// END
+
