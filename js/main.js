@@ -70,9 +70,15 @@
 //
 // ------------------------------------------------------------------ //
 //                                                                    //
-//                         METHOD DICTIONARY                          //
+//                         FUNCTION DICTIONARY                          //
 //                                                                    //
-//                //
+//  - updateClock() - updates current time every second on page load
+/*
+- setAlarm() - takes user input and outputs the JavaScript alert when alarm time is reached
+
+
+
+*/
 //                                                                    //
 //                                                                    //
 // ------------------------------------------------------------------ //
